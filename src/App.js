@@ -17,10 +17,14 @@ function App() {
           <th>Type</th>
         </thead>
         <tbody>
-          <tr>
-            <td>Bulbasaur</td>
-            <td>Grass, Poison</td>
-          </tr>
+          {
+            pokemon.map(element =>
+              <tr>
+                <td>Bulbasaur</td>
+                <td>Grass, Poison</td>
+              </tr>
+            )
+          }
         </tbody>
       </table>
     </div>

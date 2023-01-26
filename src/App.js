@@ -13,15 +13,17 @@ function App() {
       <h1 className="title">Pokemon Search</h1>
       <table width="100%">
         <thead>
-          <th>Name</th>
-          <th>Type</th>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+          </tr>
         </thead>
         <tbody>
           {
-            pokemon.map(element =>
-              <tr>
-                <td>{element.name.english}</td>
-                <td>{element.type.join(', ')}</td>
+            pokemon.map(pokemon =>
+              <tr key={pokemon.id}>
+                <td>{pokemon.name.english}</td>
+                <td>{pokemon.type.join(', ')}</td>
               </tr>
             )
           }

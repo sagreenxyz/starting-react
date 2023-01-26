@@ -20,8 +20,8 @@ function App() {
           {
             pokemon.map(element =>
               <tr>
-                <td>Bulbasaur</td>
-                <td>Grass, Poison</td>
+                <td>{element.name.english}</td>
+                <td>{element.type.join(', ')}</td>
               </tr>
             )
           }
